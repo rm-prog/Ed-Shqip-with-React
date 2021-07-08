@@ -1,4 +1,3 @@
-import ButtonLink from "./ButtonLink"
 import ButtonLinks from "./ButtonLinks"
 
 const IntroCard = ( { title, descTitle, buttonsText } ) => {
