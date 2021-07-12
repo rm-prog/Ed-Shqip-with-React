@@ -1,10 +1,26 @@
+import styles from '../index.module.css'
+
 
 const ButtonLink = ( { button } ) => {
+
+    const returnClassName = () => {
+        switch (button.cssClass) {
+            case 'blueButton':
+                return styles.blueButton
+            case 'yellowButton':
+                return styles.yellowButton
+            case 'purpleButton':
+                return styles.purpleButton
+            default:
+                return ''
+        }
+    }
+
     return (
         /* Contains button and text above it */
         <div>
-            <span className="tryThisGame"> {button.desc} </span> <br />
-            <button onclick={button.linkFunction} className={button.cssClass}> {button.text} </button>
+            <span className={styles.tryThisGame}> {button.desc} </span> <br />
+            <button onClick={button.linkFunction} className={`${styles.myButton} ${returnClassName()}`}> {button.text} </button>
             <br /> <br />
         </div>
     )
