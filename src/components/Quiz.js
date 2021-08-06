@@ -2,7 +2,6 @@ import { useState, useRef } from 'react';
 
 import styles from '../styles/quiz.module.css'
 
-import AltButton from './AltButton';
 import BackButton from './BackButton';
 
 const Quiz = ( { title, questions } ) => {
@@ -69,6 +68,7 @@ const Quiz = ( { title, questions } ) => {
     const nextClick = () => {
         if (quizQuestions[quesNumber+1] == undefined) {
             setDisplayQuizContainer(false)
+            console.log(questions)
         } else {
             changeIndex(quesNumber++)
             changeIndex(quesNumber)

@@ -20,6 +20,7 @@ import ChemistryQuizes from './pages/chemistry-quizes';
 import Quiz from './components/Quiz';
 
 import GeoQuizes from './quiz_questions/geo_quizes';
+import GeoQuiz from './quiz_questions/geo_quizes.json'
 
 function App() {
 
@@ -47,7 +48,7 @@ function App() {
               {/* ////////////////////////////////////////////////////////////////*/}
               {/*-------------------     Geography Quizes  ----------------------*/ }
               <Route exact path='/school-quizes/geography-quizes/europe' 
-              render={() => <Quiz title='Kuiz - Kontinenti i Europes' questions={GeoQuizes.europeContinent}/>}></Route>
+              render={() => <Quiz title='Kuiz - Kontinenti i Europes' questions={GeoQuiz.europeContinent}/>}></Route>
             </Switch>
           </Router>
 
