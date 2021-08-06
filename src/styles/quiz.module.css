@@ -1,0 +1,141 @@
+
+*
+{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.pageBody {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    object-fit: fill;
+}
+
+.blueRedBg 
+{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+.blueYellowBg 
+{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,247,70,1) 100%);
+}
+
+.blueGreenBg
+{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,252,152,1) 100%);
+}
+
+.blueLightBlueBg
+{
+    background: rgb(63,231,251);
+    background: radial-gradient(circle, rgba(63,231,251,1) 0%, rgba(24,30,194,1) 100%);
+}
+
+center{
+    position: relative;
+    right: 5px;
+    top: 40px;
+}
+
+
+
+
+.quiz_container{
+    width: 340px;
+    height: auto;
+    background-color: gainsboro;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;    
+}
+
+
+.displayGrid
+{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+}
+
+.question{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+#corrAnswer{
+    font-size: 1.2rem;
+}
+
+.btn{
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.btn:disabled {
+    pointer-events: none;
+}
+
+.cyanBtn {
+    background-color: cyan;
+    color: darkslategrey;
+}
+
+.greenBtn
+{
+    background-color: green;
+    color: white;
+}
+
+.redBtn
+{
+    background-color: red;
+    color: white;
+}
+
+.btn:hover 
+{
+    border-width: 3px;
+}
+
+.next_btn
+{
+    width: 100px;
+    padding: 12px;
+    font-size: 1.5rem;
+    background-color: gold;
+}
+
+.displayNone 
+{
+    display: none;
+}
+
+.displayBlock 
+{
+    display: block;
+}
+
+
+@media screen and (max-width: 600px){
+    .back
+    {
+        display: none;
+    }
+}

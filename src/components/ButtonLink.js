@@ -1,7 +1,9 @@
-import styles from '../index.module.css'
+import styles from '../styles/index.module.css'
 
 
 const ButtonLink = ( { button } ) => {
+
+    // button @parameter is an object that contains id, description, onClickFunction, color and text of ButtonLink
 
     const returnClassName = () => {
         switch (button.cssClass) {

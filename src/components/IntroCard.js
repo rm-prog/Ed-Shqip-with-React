@@ -1,9 +1,9 @@
 import ButtonLinks from "./ButtonLinks"
-import styles from '../index.module.css'
+import styles from '../styles/index.module.css'
 
 const IntroCard = ( { title, descTitle, buttonsText } ) => {
 
-    // ButtonsText is an array that contains data that will be used to create buttons
+    // buttonsText @parameter is an array that contains data that will be used to create buttons
     
     return (
         <div className={styles.introCard}>
