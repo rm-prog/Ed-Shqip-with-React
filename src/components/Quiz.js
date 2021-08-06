@@ -58,27 +58,26 @@ const Quiz = ( { title, questions } ) => {
             setNumOfRightAnswers(numOfRightAnswers)
             setNumOfWrongAnswers(numOfWrongAnswers)
         }
-        console.log(numOfWrongAnswers)
-        console.log(numOfRightAnswers)
-
         // Allow the user to go to the next question
         setDisableNextBtn(false)
     }
 
     const nextClick = () => {
+        // Check if there are questions left
         if (quizQuestions[quesNumber+1] == undefined) {
             setDisplayQuizContainer(false)
-            console.log(questions)
         } else {
+            // If so go to next question
+            // and change the buttons as they were before
             changeIndex(quesNumber++)
             changeIndex(quesNumber)
-            console.log(quesNumber)
             setAlt1Color(styles.cyanBtn)
             setAlt2Color(styles.cyanBtn)
             setAlt3Color(styles.cyanBtn)
             setDisableAltBtn(false)
             setDisplayAnswer(false)
         }
+        // Make sure user cant go to next question without clicking an alternative btn
         setDisableNextBtn(true)
     }
 
@@ -107,7 +106,10 @@ const Quiz = ( { title, questions } ) => {
                             }
                             altClick(correct)
                         }} 
+                        // alt1Color will change according to the answer of the user being correct or not
                         className={`${styles.btn} ${alt1Color}`} ref={alt1}
+                        // Alt Btn will be disabled when user clicks one alt button
+                        // And enabled after next Btn is clicked
                         disabled={disableAltBtn}>
                         {quizQuestions[quesNumber].alternatives[0].a} </button>
                         <button value={quizQuestions[quesNumber].alternatives[1].correct} 
@@ -123,7 +125,10 @@ const Quiz = ( { title, questions } ) => {
                             }
                             altClick(correct)
                         }}  
+                        // alt2Color will change according to the answer of the user being correct or not
                         className={`${styles.btn} ${alt2Color}`} ref={alt2}
+                        // Alt Btn will be disabled when user clicks one alt button
+                        // And enabled after next Btn is clicked
                         disabled={disableAltBtn}>
                         {quizQuestions[quesNumber].alternatives[1].b} </button>
                         <button value={quizQuestions[quesNumber].alternatives[2].correct} 
@@ -139,15 +144,22 @@ const Quiz = ( { title, questions } ) => {
                             }
                             altClick(correct)
                         }}  
+                        // alt3Color will change according to the answer of the user being correct or not
                         className={`${styles.btn} ${alt3Color}`} ref={alt3}
+                        // Alt Btn will be disabled when user clicks one alt button
+                        // And enabled after next Btn is clicked
                         disabled={disableAltBtn}>
                         {quizQuestions[quesNumber].alternatives[2].c} </button>
                     </div> 
                     <br />
+                    {/* The answer of the question will be displayed when the user clicks an alt button */}
+                    {/* And hidden after the next btn is clicked  */}
                     <span className={displayAnswer ? styles.displayBlock : styles.displayNone}> Pergjigja e sakte: {questions[quesNumber].correct} </span>
+                    {/* The Next Btn will disabled until user cliks an alt button */}
                     <button className={`${styles.next_btn} ${styles.btn}`} onClick={() => nextClick()} id='next1' disabled={disableNextBtn}> Next </button>
                 </div>
 
+                {/* This div containing all the correct answers will be displayed after all questions are finished */}
                 <div className={`${styles.quiz_container} ${!displayQuizContainer ? styles.displayGrid : styles.displayNone}`}>
                     <div className={styles.question}> Rezultatet </div>
                     <br />
