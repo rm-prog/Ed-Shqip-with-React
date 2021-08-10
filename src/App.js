@@ -18,8 +18,10 @@ import PhysicsQuizes from './pages/physics-quizes'
 import ChemistryQuizes from './pages/chemistry-quizes';
 
 import Quiz from './components/Quiz';
-
 import GeoQuizes from './quiz_questions/geo_quizes.json'
+
+import WordGame from './components/WordGame';
+import EnglishWordGames from './word_games/english_word_games.json'
 
 function App() {
 
@@ -48,6 +50,12 @@ function App() {
               {/*-------------------     Geography Quizes  ----------------------*/ }
               <Route exact path='/school-quizes/geography-quizes/europe' 
               render={() => <Quiz title='Kuiz - Kontinenti i Europes' questions={GeoQuizes.europeContinent}/>}></Route>
+              {/* ///////////////////////////////////////////////////////////////
+                  ///////////////////////////////////////////////////////////////
+                  ----------------------  Word Games  --------------------------
+              */}
+              <Route exact path='/word_games/english1'
+              render={() => <WordGame words={EnglishWordGames.word_game1}/>}></Route>
             </Switch>
           </Router>
 

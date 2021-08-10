@@ -11,10 +11,14 @@ const WordGames = () => {
 
     // Data used to create buttons
 
+    const goToEnglish1 = () => {
+        window.open('/word_games/english1', '_self')
+    }
+
     const infos = [
         {
             id: 1,
-            clickFunction: () => goToMainPage(),
+            clickFunction: () => goToEnglish1(),
             buttonColor: styles.lime,
             buttonText: 'Gjeni fjalet e fshehura 1 - Anglisht'
         },

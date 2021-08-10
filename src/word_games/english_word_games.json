@@ -1,0 +1,178 @@
+{
+    "word_game1": [
+        {
+            "letters": ["S", "U", "N", "F", "L", "O", "R", "E", "W"],
+            "numberOfWords": 3,
+            "correctWords":  [
+                {
+                    "theWord": "SUN",
+                    "indexes": [0, 1, 2],
+                    "loopingVar": 3
+                },
+                {
+                    "theWord": "FLOWER",
+                    "indexes": [3, 4, 5, 6, 7, 8],
+                    "loopingVar": 6
+                },
+                {
+                    "theWord": "SUNFLOWER",
+                    "indexes": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+                    "loopingVar": 9
+                }
+            ]
+        },
+        {
+            "letters": ["B", "U", "T", "R", "E", "T", "F", "L", "Y"],
+            "numberOfWords": 3,
+            "correctWords":  [
+                {
+                    "theWord": "FLY",
+                    "indexes": [6, 7, 8],
+                    "loopingVar": 3
+                },
+                {
+                    "theWord": "BUTTER",
+                    "indexes": [0, 1, 2, 3, 4, 5],
+                    "loopingVar": 6
+                },
+                {
+                    "theWord": "BUTTERFLY",
+                    "indexes": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+                    "loopingVar": 9
+                }
+            ]
+        },
+        {
+            "letters": ["B", "L", "U", "B", "Y", "E", "E", "R", "R"],
+            "numberOfWords": 3,
+            "correctWords":  [
+                {
+                    "theWord": "BLUE",
+                    "indexes": [0, 1, 2, 5],
+                    "loopingVar": 4
+                },
+                {
+                    "theWord": "BLUEBERRY",
+                    "indexes": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+                    "loopingVar": 9
+                },
+                {
+                    "theWord": "BERRY",
+                    "indexes": [3, 4, 6, 7, 8],
+                    "loopingVar": 5
+                }
+            ]
+        },
+        {
+            "letters": ["M", "L", "T", "O", "I", "H", "O", "N", "G"],
+            "numberOfWords": 3,
+            "correctWords":  [
+                {
+                    "theWord": "MOON",
+                    "indexes": [0, 3, 6, 7],
+                    "loopingVar": 4
+                },
+                {
+                    "theWord": "LIGHT",
+                    "indexes": [1, 4, 8, 5, 2],
+                    "loopingVar": 5
+                },
+                {
+                    "theWord": "MOONLIGHT",
+                    "indexes": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+                    "loopingVar": 9
+                }
+            ]
+        },
+        {
+            "letters": ["S", "L", "B", "C", "O", "U", "H", "O", "S"],
+            "numberOfWords": 2,
+            "correctWords":  [
+                {
+                    "theWord": "SCHOOL",
+                    "indexes": [0, 3, 6, 7, 4, 1],
+                    "loopingVar": 6
+                },
+                {
+                    "theWord": "BUS",
+                    "indexes": [2, 5, 8],
+                    "loopingVar": 3
+                }
+            ]
+        },
+        {
+            "letters": ["B", "E", "A", "A", "C", "H", "S", "N", "D"],
+            "numberOfWords": 2,
+            "correctWords":  [
+                {
+                    "theWord": "SAND",
+                    "indexes": [6, 3, 7, 8],
+                    "loopingVar": 4
+                },
+                {
+                    "theWord": "BEACH",
+                    "indexes": [0, 1, 2, 4, 5],
+                    "loopingVar": 5
+                }
+            ]
+        },
+        {
+            "letters": ["C", "M", "R", "L", "A", "O", "S", "S", "O"],
+            "numberOfWords": 3,
+            "correctWords":  [
+                {
+                    "theWord": "ROOM",
+                    "indexes": [2, 5, 8, 1],
+                    "loopingVar": 4
+                },
+                {
+                    "theWord": "CLASS",
+                    "indexes": [0, 3, 6, 7, 4],
+                    "loopingVar": 5
+                },
+                {
+                    "theWord": "CLASSROOM",
+                    "indexes": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+                    "loopingVar": 9
+                }
+            ]
+        },
+        {
+            "letters": ["A", "K", "E", "H", "S", "D", "H", "A", "N"],
+            "numberOfWords": 3,
+            "correctWords":  [
+                {
+                    "theWord": "HAND",
+                    "indexes": [6, 7, 8, 5],
+                    "loopingVar": 4
+                },
+                {
+                    "theWord": "SHAKE",
+                    "indexes": [4, 3, 0, 1, 2],
+                    "loopingVar": 5
+                },
+                {
+                    "theWord": "HANDSHAKE",
+                    "indexes": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+                    "loopingVar": 9
+                }
+            ]
+        },
+        {
+            "letters": ["M", "U", "S", "H", "O", "T", "M", "E", "R"],
+            "numberOfWords": 2,
+            "correctWords":  [
+                {
+                    "theWord": "HOT",
+                    "indexes": [3, 4, 5],
+                    "loopingVar": 3
+                },
+                {
+                    "theWord": "SUMMER",
+                    "indexes": [2, 1, 0, 6, 7, 8],
+                    "loopingVar": 6
+                }
+            ]
+        }
+    ]
+}
