@@ -11,10 +11,7 @@ const MainPage = () => {
     const reloadFunc = () => window.location.reload()
 
     // Links for buttons
-    const goToLogicGames = () => window.open('/logic_games', '_self')
-    const goToWordGames = () => window.open('/word_games', '_self')
-    const goToFootballQuizes = () => window.open('/football-quizes', '_self')
-    const goToSchoolQuizes = () => window.open('/school-quizes', '_self')
+    const goToPage = (urlLink) => window.open(urlLink, '_self')
 
 
     // This array contains info thats going to be used to create buttons
@@ -33,28 +30,28 @@ const MainPage = () => {
         id: 1,
         desc: 'Provoni lojerat e trurit', 
         text: 'Lojerat e trurit',
-        linkFunction: () => goToLogicGames(),
+        linkFunction: () => goToPage('/logic_games'),
         style: ''
     },
     { 
         id: 2,
         desc: 'Provoni lojerat e fjaleve', 
         text: 'Lojerat e fjaleve',
-        linkFunction: () => goToWordGames(),
+        linkFunction: () => goToPage('/word_games'),
         cssClass: 'blueButton'
     },
     { 
         id: 3,
         desc: 'Provoni njohurite tuaja nga futbolli', 
         text: 'Kuize futbolli',
-        linkFunction: () => goToFootballQuizes(),
+        linkFunction: () => goToPage('/football-quizes'),
         cssClass: 'yellowButton'
     },
     { 
         id: 4,
         desc: 'Provoni kuize ne lende te ndryshme shkollore', 
         text: 'Kuize shkollore',
-        linkFunction: () => goToSchoolQuizes(),
+        linkFunction: () => goToPage('/school-quizes'),
         cssClass: 'purpleButton'
     }])
 

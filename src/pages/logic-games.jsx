@@ -15,10 +15,14 @@ const LogicGames = () => {
 
     // Data used to create cards
 
+    const goToLogicGame = (urlLink) => {
+        window.open(urlLink, '_self')
+    }
+
     const cardsInfo = [
         {
             id: 1,
-            clickFunction: () => goToMainPage(),
+            clickFunction: () => goToLogicGame('/logic_games/memorise_numbers_game'),
             imgSource: game1,
             cardTitle: 'Memorizoni rradhen e numrave',
             link: '/'

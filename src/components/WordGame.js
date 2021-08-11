@@ -2,6 +2,8 @@ import { useState, useRef } from 'react'
 import styles from '../styles/wordGame.module.css'
 
 import BackButton from './BackButton'
+import StartButton from './StartButton'
+
 const WordGame = ( { words } ) => {
 
     const backHistory = () => {
@@ -74,7 +76,7 @@ const WordGame = ( { words } ) => {
         const currentWords = wordsArray[arrayIndex]
         for (let i=0; i<numberOfWords; i++) {
             // Check if the users Answer corresponds with one of the words
-            if (answerDisplayValue == currentWords.correctWords[i].theWord) {
+            if (answerDisplayValue === currentWords.correctWords[i].theWord) {
                 // Copy cellsBgColor, make changes to it and then assign it the value of newCellsBgColor 
                 let newCellsBgColor = [...cellsBgColor]
                 for (let j=0; j<9; j++) {
@@ -89,7 +91,7 @@ const WordGame = ( { words } ) => {
                 setCrushedCells(crushedCells)
                 setAnswerDisplay('Sakte!')
                 break
-            } else if (i == numberOfWords - 1) {
+            } else if (i === numberOfWords - 1) {
                 // If users answer is incorrect
                 setAnswerDisplay(`Gabim! ${'<br>'} Fjala qe ju shkruajtet nuk ekziton ose nuk eshte ajo qe po kerkojme. ${'<br>'}Provoni perseri!`)
                 break
@@ -146,7 +148,7 @@ const WordGame = ( { words } ) => {
                     {answerDisplay}
                     <span className={`${styles.warningSpan} ${displayStartButton}`}>Lejohet vetem nje ndihme per raund</span>
                     <br />
-                    <button className={`${styles.startButton} ${displayStartButton}`} onClick={() => startGame()}>Filloni lojen</button>
+                    <StartButton onClick={startGame} display={displayStartButton} />
                 </div>
                 <br /> <br />
                 <table className={`${styles.wordContainer} ${displayTable}`}>

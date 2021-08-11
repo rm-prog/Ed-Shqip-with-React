@@ -23,39 +23,48 @@ import GeoQuizes from './quiz_questions/geo_quizes.json'
 import WordGame from './components/WordGame';
 import EnglishWordGames from './word_games/english_word_games.json'
 
+// logic Games
+import MemoriseNumbersGame from './pages/memorise-numbers-game';
+import { memberExpression } from '@babel/types';
+
 function App() {
 
   // All the pages of the website in one place
   return <Router>
             <Switch>
               {/*  This route takes you to the main page  */}
-              <Route exact path='/' component={MainPage}></Route>
+              <Route exact path='/' component={MainPage} />
               {/*   This one takes you to the page with lOGIC GAMES  */}
-              <Route exact path='/logic_games' component={LogicGames}></Route>
+              <Route exact path='/logic_games' component={LogicGames} />
               {/*   This one takes you to the page with WORD GAMES   */}
-              <Route exact path='/word_games' component={WordGames}></Route>
+              <Route exact path='/word_games' component={WordGames} />
               {/*   This one takes you to the page with FOOTBALL QUIZES  */}
-              <Route exact path='/football-quizes' component={FootballQuizes}></Route>
+              <Route exact path='/football-quizes' component={FootballQuizes} />
               {/*   This one takes you to the page with SCHOOL QUIZES*/}
-              <Route exact path='/school-quizes' component={SchoolQuizes}></Route>
+              <Route exact path='/school-quizes' component={SchoolQuizes} />
               {/*   Take you to school quizes of different categories */}
               {/* !!!!!!!!!!!   TO BE CREATED   !!!!!!!!!!!!!!!!*/}
-              <Route exact path='/school-quizes/geography-quizes' component={GeographyQuizes}></Route>
-              <Route exact path='/school-quizes/math-quizes' component={MathQuizes}></Route>
-              <Route exact path='/school-quizes/chemistry-quizes' component={ChemistryQuizes}></Route>
-              <Route exact path='/school-quizes/history-quizes' component={HistoryQuizes}></Route>
-              <Route exact path='/school-quizes/physics-quizes' component={PhysicsQuizes}></Route>
+              <Route exact path='/school-quizes/geography-quizes' component={GeographyQuizes} />
+              <Route exact path='/school-quizes/math-quizes' component={MathQuizes} />
+              <Route exact path='/school-quizes/chemistry-quizes' component={ChemistryQuizes} />
+              <Route exact path='/school-quizes/history-quizes' component={HistoryQuizes} />
+              <Route exact path='/school-quizes/physics-quizes' component={PhysicsQuizes} />
               {/* ////////////////////////////////////////////////////////////////*/}
               {/* ////////////////////////////////////////////////////////////////*/}
               {/*-------------------     Geography Quizes  ----------------------*/ }
               <Route exact path='/school-quizes/geography-quizes/europe' 
-              render={() => <Quiz title='Kuiz - Kontinenti i Europes' questions={GeoQuizes.europeContinent}/>}></Route>
+              render={() => <Quiz title='Kuiz - Kontinenti i Europes' questions={GeoQuizes.europeContinent}/>} />
               {/* ///////////////////////////////////////////////////////////////
                   ///////////////////////////////////////////////////////////////
                   ----------------------  Word Games  --------------------------
               */}
               <Route exact path='/word_games/english1'
-              render={() => <WordGame words={EnglishWordGames.word_game1}/>}></Route>
+              render={() => <WordGame words={EnglishWordGames.word_game1}/>} />
+              {/* //////////////////////////////////////////////////////////////
+                  //////////////////////////////////////////////////////////////
+                  --------------------  Logic Games  ---------------------------
+              */}
+              <Route exact path='/logic_games/memorise_numbers_game' component={MemoriseNumbersGame}/>
             </Switch>
           </Router>
 

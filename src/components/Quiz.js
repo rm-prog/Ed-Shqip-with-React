@@ -64,7 +64,7 @@ const Quiz = ( { title, questions } ) => {
 
     const nextClick = () => {
         // Check if there are questions left
-        if (quizQuestions[quesNumber+1] == undefined) {
+        if (quizQuestions[quesNumber+1] === undefined) {
             setDisplayQuizContainer(false)
         } else {
             // If so go to next question
@@ -95,7 +95,7 @@ const Quiz = ( { title, questions } ) => {
                     <div id={styles.alternatives}>
                         <button value={quizQuestions[quesNumber].alternatives[0].correct} 
                         onClick={(correct) => {
-                            correct = alt1.current.value == '0' ? false : true
+                            correct = alt1.current.value === '0' ? false : true
                             if (!correct) { 
                                 console.log('Wrong')
                                 setAlt1Color(styles.redBtn)
@@ -114,7 +114,7 @@ const Quiz = ( { title, questions } ) => {
                         {quizQuestions[quesNumber].alternatives[0].a} </button>
                         <button value={quizQuestions[quesNumber].alternatives[1].correct} 
                         onClick={(correct) => {
-                            correct = alt2.current.value == '0' ? false : true
+                            correct = alt2.current.value === '0' ? false : true
                             if (!correct) { 
                                 console.log('Wrong')
                                 setAlt2Color(styles.redBtn)
@@ -133,7 +133,7 @@ const Quiz = ( { title, questions } ) => {
                         {quizQuestions[quesNumber].alternatives[1].b} </button>
                         <button value={quizQuestions[quesNumber].alternatives[2].correct} 
                         onClick={(correct) => {
-                            correct = alt3.current.value == '0' ? false : true
+                            correct = alt3.current.value === '0' ? false : true
                             if (!correct) { 
                                 console.log('Wrong')
                                 setAlt3Color(styles.redBtn)
