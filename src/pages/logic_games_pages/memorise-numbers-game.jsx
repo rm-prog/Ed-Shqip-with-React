@@ -1,13 +1,13 @@
 import { useState } from 'react'
 
-import StartButton from '../components/StartButton'
-import BackButton from '../components/BackButton'
-import LogicGamesHeader from '../components/LogicGamesHeader'
-import GridItem from '../components/GridItem'
+import StartButton from '../../components/buttonComponents/StartButton'
+import BackButton from '../../components/buttonComponents/BackButton'
+import LogicGamesHeader from '../../components/mainComponents/LogicGamesHeader'
+import GridItem from '../../components/GridItem'
 
-import styles from '../styles/logicGames.module.css'
+import styles from '../../styles/logicGames.module.css'
 
-import numbersOrderArray from '../logic_games_data/memorise_numbers_game.json'
+import numbersOrderArray from '../../logic_games_data/memorise_numbers_game.json'
 
 const MemoriseNumbersGame = () => {
 

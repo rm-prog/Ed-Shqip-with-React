@@ -1,6 +1,6 @@
-import GameCard from "./GameCard"
-import GameButton from "./GameButton"
-import styles from '../styles/mainPages.module.css'
+import GameCard from "../GameCard"
+import GameButton from '../buttonComponents/GameButton'
+import styles from '../../styles/mainPages.module.css'
 
 const GamesMenu = ( { cardOrButton, infos } ) => {
 

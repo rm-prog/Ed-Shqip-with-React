@@ -7,25 +7,27 @@ import {
 
 // Pages
 import MainPage from './pages';
-import LogicGames from "./pages/logic-games";
+import LogicGames from "./pages/logic_games_pages/logic-games";
 import WordGames from './pages/word-games';
 import FootballQuizes from './pages/football-quizes'
-import SchoolQuizes from './pages/school-quizes'
-import GeographyQuizes from './pages/geography-quizes'
-import MathQuizes from './pages/math-quizes'
-import HistoryQuizes from './pages/history-quizes'
-import PhysicsQuizes from './pages/physics-quizes'
-import ChemistryQuizes from './pages/chemistry-quizes';
+import SchoolQuizes from './pages/school_quizes_pages/school-quizes'
+import GeographyQuizes from './pages/school_quizes_pages/geography-quizes'
+import MathQuizes from './pages/school_quizes_pages/math-quizes'
+import HistoryQuizes from './pages/school_quizes_pages/history-quizes'
+import PhysicsQuizes from './pages/school_quizes_pages/physics-quizes'
+import ChemistryQuizes from './pages/school_quizes_pages/chemistry-quizes';
 
+// School Quizes
 import Quiz from './components/Quiz';
 import GeoQuizes from './quiz_questions/geo_quizes.json'
 
+// Word Games
 import WordGame from './components/WordGame';
 import EnglishWordGames from './word_games/english_word_games.json'
 
 // logic Games
-import MemoriseNumbersGame from './pages/memorise-numbers-game';
-import { memberExpression } from '@babel/types';
+import MemoriseNumbersGame from './pages/logic_games_pages/memorise-numbers-game';
+import FindHiddenNumber from './pages/logic_games_pages/find-hidden-number';
 
 function App() {
 
@@ -65,6 +67,7 @@ function App() {
                   --------------------  Logic Games  ---------------------------
               */}
               <Route exact path='/logic_games/memorise_numbers_game' component={MemoriseNumbersGame}/>
+              <Route exact path='/logic_games/find_hidden_number' component={FindHiddenNumber}/>
             </Switch>
           </Router>
 

@@ -1,4 +1,4 @@
-import styles from '../styles/mainPages.module.css'
+import styles from '../../styles/mainPages.module.css'
 
 const GameButton = ( { buttonColor, onClick, buttonText } ) => {
 

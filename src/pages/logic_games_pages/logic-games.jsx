@@ -1,15 +1,15 @@
 import React from "react"
-import PageHeader from "../components/PageHeader"
-import BackButton from "../components/BackButton"
-import GamesMenu from "../components/GamesMenu"
-import styles from '../styles/mainPages.module.css'
+import PageHeader from "../../components/mainComponents/PageHeader"
+import BackButton from "../../components/buttonComponents/BackButton"
+import GamesMenu from "../../components/mainComponents/GamesMenu"
+import styles from '../../styles/mainPages.module.css'
 
 // Card Images
-import game1 from '../screenshots/memorise-the-numbers-game.PNG'
-import game2 from '../screenshots/find-the-number.PNG'
-import game4 from '../screenshots/remember-the-letters.PNG'
-import game5 from '../screenshots/find-the-percentage.PNG'
-import game6 from '../screenshots/find-the-percentage.PNG'
+import game1 from '../../screenshots/memorise-the-numbers-game.PNG'
+import game2 from '../../screenshots/find-the-number.PNG'
+import game4 from '../../screenshots/remember-the-letters.PNG'
+import game5 from '../../screenshots/find-the-percentage.PNG'
+import game6 from '../../screenshots/find-the-percentage.PNG'
 
 const LogicGames = () => {
 
@@ -29,7 +29,7 @@ const LogicGames = () => {
         },
         {
             id: 2,
-            clickFunction: () => goToMainPage(),
+            clickFunction: () => goToLogicGame('/logic_games/find_hidden_number'),
             imgSource: game2,
             cardTitle: 'Gjeni numrin e fshehur',
             link: '/'
@@ -37,28 +37,14 @@ const LogicGames = () => {
         {
             id: 3,
             clickFunction: () => goToMainPage(),
-            imgSource: game1,
-            cardTitle: 'Memorizoni rradhen e numrave',
-            link: '/'
-        },
-        {
-            id: 4,
-            clickFunction: () => goToMainPage(),
             imgSource: game4,
             cardTitle: 'Mbani mend shkronjat',
             link: '/'
         },
         {
-            id: 5,
+            id: 4,
             clickFunction: () => goToMainPage(),
             imgSource: game5,
-            cardTitle: 'Gjeni sa i mbushur eshte drejtkendeshi i kuq',
-            link: '/'
-        },
-        {
-            id: 6,
-            clickFunction: () => goToMainPage(),
-            imgSource: game6,
             cardTitle: 'Gjeni sa i mbushur eshte drejtkendeshi i kuq',
             link: '/'
         }

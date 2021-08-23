@@ -1,7 +1,7 @@
 import styles from '../styles/mainPages.module.css'
-import PageHeader from '../components/PageHeader'
-import GamesMenu from '../components/GamesMenu'
-import BackButton from '../components/BackButton'
+import PageHeader from '../components/mainComponents/PageHeader'
+import GamesMenu from '../components/mainComponents/GamesMenu'
+import BackButton from '../components/buttonComponents/BackButton'
 
 const FootballQuizes = () => {
 

@@ -1,6 +1,6 @@
-import styles from '../styles/wordGame.module.css'
+import styles from '../../styles/wordGame.module.css'
 
-const StartButton = ( { onClick, display, text = 'Filloni Lojen', disabled = false } ) => {
+const StartButton = ( { onClick, display = styles.displayBlock, text = 'Filloni Lojen', disabled = false } ) => {
     return (
         <button className={`${styles.startButton} ${display}`} onClick={onClick} disabled={disabled}> {text} </button>
     )

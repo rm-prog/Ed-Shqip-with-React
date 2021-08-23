@@ -1,4 +1,4 @@
-import styles from '../styles/logicGames.module.css'
+import styles from '../../styles/logicGames.module.css'
 
 const LogicGamesHeader = ( { title } ) => {
     return (

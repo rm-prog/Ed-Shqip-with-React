@@ -1,4 +1,4 @@
-import styles from '../styles/quiz.module.css'
+import styles from '../../styles/quiz.module.css'
 
 const AltButton = ( { id, value, clickFunction, text, btnColor } ) => {
     

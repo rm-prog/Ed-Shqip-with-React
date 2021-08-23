@@ -1,4 +1,4 @@
-import styles from '../styles/mainPages.module.css'
+import styles from '../../styles/mainPages.module.css'
 
 // !!! Used as header not for the home page
 
