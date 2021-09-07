@@ -57,7 +57,7 @@ const MemoriseNumbersGame = () => {
         setStartButtonText('Next')
         setDisableStartButton(true)
         setAnswer('Memorizoni rradhen e numrave dhe pastaj shtypni kutite sipas rradhes')
-        if (numbersArray[exerciseIndex] != undefined) {
+        if (numbersArray[exerciseIndex] !== undefined) {
             timeCounter = setInterval(myTimer, 1000)
         } else {
             setAnswer(`Bravo kaluat te gjitha raundet
@@ -85,7 +85,7 @@ const MemoriseNumbersGame = () => {
     }
 
     const numberClick = (value, index) => {
-        if (value == numberIndex) {
+        if (value === numberIndex) {
             gridItemsText[index] = value
             numberIndex++
             setNumberIndex(numberIndex)
@@ -108,7 +108,7 @@ const MemoriseNumbersGame = () => {
                 setAnswer('Sakte!! Vazhdoni.')
             }
         } else {
-            if (numberRevealIndex != 0) {
+            if (numberRevealIndex !== 0) {
                 return 0;
             }
             unsolvedExercises++

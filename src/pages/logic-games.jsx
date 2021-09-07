@@ -29,36 +29,22 @@ const LogicGames = () => {
         },
         {
             id: 2,
-            clickFunction: () => goToMainPage(),
+            clickFunction: () => goToLogicGame('/logic_games/find_hidden_number'),
             imgSource: game2,
             cardTitle: 'Gjeni numrin e fshehur',
             link: '/'
         },
         {
             id: 3,
-            clickFunction: () => goToMainPage(),
-            imgSource: game1,
-            cardTitle: 'Memorizoni rradhen e numrave',
-            link: '/'
-        },
-        {
-            id: 4,
-            clickFunction: () => goToMainPage(),
+            clickFunction: () => goToLogicGame('/logic_games/remember_letters'),
             imgSource: game4,
             cardTitle: 'Mbani mend shkronjat',
             link: '/'
         },
         {
-            id: 5,
+            id: 4,
             clickFunction: () => goToMainPage(),
             imgSource: game5,
-            cardTitle: 'Gjeni sa i mbushur eshte drejtkendeshi i kuq',
-            link: '/'
-        },
-        {
-            id: 6,
-            clickFunction: () => goToMainPage(),
-            imgSource: game6,
             cardTitle: 'Gjeni sa i mbushur eshte drejtkendeshi i kuq',
             link: '/'
         }
