@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 
 import styles from '../styles/quiz.module.css'
 
-import BackButton from './buttonComponents/BackButton';
+import BackButton from './BackButton';
 
 const Quiz = ( { title, questions } ) => {
 

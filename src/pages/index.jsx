@@ -1,7 +1,7 @@
 import React from "react"
 
 import { useState } from "react";
-import Header from "../components/mainComponents/Header";
+import Header from "../components/Header";
 import IntroCard from "../components/IntroCard";
 
 import styles from '../styles/index.module.css'

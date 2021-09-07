@@ -1,36 +1,5 @@
 [
     {
-<<<<<<< HEAD
-      "correct": "1",
-      "incorrect": "7"
-    },
-    {
-      "correct": "3",
-      "incorrect": "8"
-    },
-    {
-      "correct": "8",
-      "incorrect": "B"
-    },
-    {
-      "correct": "0",
-      "incorrect": "Q"
-    },
-    {
-      "correct": "0",
-      "incorrect": "O"
-    },
-    {
-      "correct": "2",
-      "incorrect": "Z"
-    },
-    {
-      "correct": "5",
-      "incorrect": "S"
-    },
-    {
-      "correct": "1",
-=======
       "correct": 1,
       "incorrect": 7
     },
@@ -60,7 +29,6 @@
     },
     {
       "correct": 1,
->>>>>>> desired-state
       "incorrect": "L"
     }
   ]

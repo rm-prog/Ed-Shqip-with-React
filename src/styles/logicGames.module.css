@@ -9,18 +9,6 @@ body {
   padding: 0;
 }
 
-.displayNone {
-    display: none;
-}
-
-.displayTable {
-    display: table;
-}
-
-.displayBlock {
-    display: block;
-}
-
 .pageBody {
     position: absolute;
     top: 0;
@@ -90,12 +78,6 @@ body {
     background-color: lightblue;
 }
 
-<<<<<<< HEAD
-.timeDisplay {
-    font-size: 1.3rem;
-}
-=======
->>>>>>> desired-state
 
 .tableButton {
     width: 21px;
@@ -129,12 +111,6 @@ body {
       width: 21px;
       height: 22.5px;
       border: none;
-<<<<<<< HEAD
-      margin: 0;
-      padding: 0;
-  }
-  
-=======
       padding: 0;
   }
 
@@ -164,4 +140,3 @@ body {
 .displayNone {
     display: none;
 }
->>>>>>> desired-state
