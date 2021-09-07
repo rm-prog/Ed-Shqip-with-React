@@ -9,26 +9,6 @@ const MathQuizes = () => {
     const goToMainPage = () => {
         window.open('/school-quizes', '_self')
     }
-    
-    const goToGeographyPage = () => {
-        window.open('/school-quizes/geography-quizes', '_self')
-    }
-
-    const goToMathPage = () => {
-        window.open('/school-quizes/math-quizes', '_self')
-    }
-
-    const goToPhysicsPage = () => {
-        window.open('/school-quizes/physics-quizes', '_self')
-    }
-
-    const goToHistoryPage = () => {
-        window.open('/school-quizes/history-quizes', '_self')
-    }
-
-    const goToChemistryPage = () => {
-        window.open('/school-quizes/chemistry-quizes', '_self')
-    }
 
     // Info used to create buttons
 

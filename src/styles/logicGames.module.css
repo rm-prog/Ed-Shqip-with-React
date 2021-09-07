@@ -90,9 +90,12 @@ body {
     background-color: lightblue;
 }
 
+<<<<<<< HEAD
 .timeDisplay {
     font-size: 1.3rem;
 }
+=======
+>>>>>>> desired-state
 
 .tableButton {
     width: 21px;
@@ -126,7 +129,39 @@ body {
       width: 21px;
       height: 22.5px;
       border: none;
+<<<<<<< HEAD
       margin: 0;
       padding: 0;
   }
   
+=======
+      padding: 0;
+  }
+
+.nextBtn {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100px;
+    padding: 12px;
+    font-size: 1.5rem;
+    background-color: gold;
+}
+
+.nextBtn:disabled {
+    pointer-events: none;
+}
+
+.nextBtn:hover {
+    border-width: 3px;
+}
+
+.displayBlock {
+    display: block;
+}
+
+.displayNone {
+    display: none;
+}
+>>>>>>> desired-state

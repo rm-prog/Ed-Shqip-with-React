@@ -26,10 +26,16 @@ import WordGame from './components/WordGame';
 import EnglishWordGames from './word_games/english_word_games.json'
 
 // logic Games
+<<<<<<< HEAD
 import MemoriseNumbersGame from './pages/logic_games_pages/memorise-numbers-game';
 import FindHiddenNumber from './pages/logic_games_pages/find-hidden-number';
+=======
+import MemoriseNumbersGame from './pages/memorise-numbers-game';
+import FindHiddenNumber from './pages/find-hidden-number';
+import RememberLetters from './pages/remember-letters';
+>>>>>>> desired-state
 
-function App() {
+const App = () => {
 
   // All the pages of the website in one place
   return <Router>
@@ -66,8 +72,14 @@ function App() {
                   //////////////////////////////////////////////////////////////
                   --------------------  Logic Games  ---------------------------
               */}
+<<<<<<< HEAD
               <Route exact path='/logic_games/memorise_numbers_game' component={MemoriseNumbersGame}/>
               <Route exact path='/logic_games/find_hidden_number' component={FindHiddenNumber}/>
+=======
+              <Route exact path='/logic_games/memorise_numbers_game' component={MemoriseNumbersGame} />
+              <Route exact path='/logic_games/find_hidden_number' component={FindHiddenNumber} />
+              <Route exact path='/logic_games/remember_letters' component={RememberLetters} />
+>>>>>>> desired-state
             </Switch>
           </Router>
 

@@ -36,7 +36,11 @@ const LogicGames = () => {
         },
         {
             id: 3,
+<<<<<<< HEAD:src/pages/logic_games_pages/logic-games.jsx
             clickFunction: () => goToMainPage(),
+=======
+            clickFunction: () => goToLogicGame('/logic_games/remember_letters'),
+>>>>>>> desired-state:src/pages/logic-games.jsx
             imgSource: game4,
             cardTitle: 'Mbani mend shkronjat',
             link: '/'
