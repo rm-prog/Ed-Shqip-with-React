@@ -6,27 +6,28 @@ import {
   from 'react-router-dom' 
 
 // Pages
-import MainPage from './pages';
-import LogicGames from "./pages/logic-games";
-import WordGames from './pages/word-games';
+import MainPage from './pages'
+import LogicGames from "./pages/logic-games"
+import WordGames from './pages/word-games'
 import FootballQuizes from './pages/football-quizes'
 import SchoolQuizes from './pages/school-quizes'
 import GeographyQuizes from './pages/geography-quizes'
 import MathQuizes from './pages/math-quizes'
 import HistoryQuizes from './pages/history-quizes'
 import PhysicsQuizes from './pages/physics-quizes'
-import ChemistryQuizes from './pages/chemistry-quizes';
+import ChemistryQuizes from './pages/chemistry-quizes'
 
-import Quiz from './components/Quiz';
+import Quiz from './components/Quiz'
 import GeoQuizes from './quiz_questions/geo_quizes.json'
 
-import WordGame from './components/WordGame';
+import WordGame from './components/WordGame'
 import EnglishWordGames from './word_games/english_word_games.json'
 
 // logic Games
-import MemoriseNumbersGame from './pages/memorise-numbers-game';
-import FindHiddenNumber from './pages/find-hidden-number';
-import RememberLetters from './pages/remember-letters';
+import MemoriseNumbersGame from './pages/memorise-numbers-game'
+import FindHiddenNumber from './pages/find-hidden-number'
+import RememberLetters from './pages/remember-letters'
+import FindThePercentage from './pages/find-the-percentage'
 
 const App = () => {
 
@@ -68,6 +69,7 @@ const App = () => {
               <Route exact path='/logic_games/memorise_numbers_game' component={MemoriseNumbersGame} />
               <Route exact path='/logic_games/find_hidden_number' component={FindHiddenNumber} />
               <Route exact path='/logic_games/remember_letters' component={RememberLetters} />
+              <Route exact path='/logic_games/find_percentage' component={FindThePercentage} />
             </Switch>
           </Router>
 
