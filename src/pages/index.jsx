@@ -8,8 +8,6 @@ import styles from '../styles/index.module.css'
 
 const MainPage = () => {
 
-    const reloadFunc = () => window.location.reload()
-
     // Links for buttons
     const goToPage = (urlLink) => window.open(urlLink, '_self')
 

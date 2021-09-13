@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef } from 'react'
 
 import styles from '../../styles/logicGames.module.css'
 
@@ -8,8 +8,6 @@ import NextButton from './NextButton'
 import lettersArray from '../../logic_games_data/remember_letters_game.json'
 
 const GameField = () => {
-
-    
 
     let [gameIndex, setGameIndex] = useState(0)
 

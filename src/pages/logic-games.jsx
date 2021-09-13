@@ -43,7 +43,7 @@ const LogicGames = () => {
         },
         {
             id: 4,
-            clickFunction: () => goToMainPage(),
+            clickFunction: () => goToLogicGame('/logic_games/find_percentage'),
             imgSource: game5,
             cardTitle: 'Gjeni sa i mbushur eshte drejtkendeshi i kuq',
             link: '/'
