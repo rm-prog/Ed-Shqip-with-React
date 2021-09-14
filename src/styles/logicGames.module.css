@@ -49,6 +49,11 @@ body {
     background-color: #D1FF4D;
 }
 
+.aquamarineBg
+{
+    background-color: aquamarine;
+}
+
 .header {
     width: 400px;
     height: auto;
@@ -152,4 +157,17 @@ body {
 
 .limeCell {
     background-color: #D1FF4D;
+}
+
+.tableButton2 {
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 12px 12px;
+    border: 1px black solid;
+    box-sizing: content-box;
 }
