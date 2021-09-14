@@ -7,9 +7,9 @@ import styles from '../styles/mainPages.module.css'
 // Card Images
 import game1 from '../screenshots/memorise-the-numbers-game.PNG'
 import game2 from '../screenshots/find-the-number.PNG'
-import game4 from '../screenshots/remember-the-letters.PNG'
-import game5 from '../screenshots/find-the-percentage.PNG'
-import game6 from '../screenshots/find-the-percentage.PNG'
+import game3 from '../screenshots/remember-the-letters.PNG'
+import game4 from '../screenshots/find-the-percentage.PNG'
+import game5 from '../screenshots/tap-the-different-button.PNG'
 
 const LogicGames = () => {
 
@@ -25,28 +25,31 @@ const LogicGames = () => {
             clickFunction: () => goToLogicGame('/logic_games/memorise_numbers_game'),
             imgSource: game1,
             cardTitle: 'Memorizoni rradhen e numrave',
-            link: '/'
         },
         {
             id: 2,
             clickFunction: () => goToLogicGame('/logic_games/find_hidden_number'),
             imgSource: game2,
             cardTitle: 'Gjeni numrin e fshehur',
-            link: '/'
         },
         {
             id: 3,
             clickFunction: () => goToLogicGame('/logic_games/remember_letters'),
-            imgSource: game4,
+            imgSource: game3,
             cardTitle: 'Mbani mend shkronjat',
-            link: '/'
         },
         {
             id: 4,
             clickFunction: () => goToLogicGame('/logic_games/find_percentage'),
-            imgSource: game5,
+            imgSource: game4,
             cardTitle: 'Gjeni sa i mbushur eshte drejtkendeshi i kuq',
-            link: '/'
+
+        },
+        {
+            id: 5,
+            clickFunction: () => goToLogicGame('/logic_games/tap_different'),
+            imgSource: game5,
+            cardTitle: 'Shtypni kutine qe ndryshon nga te tjerat'
         }
     ]
 

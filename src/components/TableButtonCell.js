@@ -1,9 +1,9 @@
 import styles from '../styles/logicGames.module.css'
 
-const TableButtonCell = ( { onClick = () => console.log('Ok'), text } ) => {
+const TableButtonCell = ( { buttonStyle = { display: 'inline-block' }, buttonClass, onClick, text = '' } ) => {
     return (
         <td className={styles.tableCell}>
-            <button className={styles.tableButton} onClick={onClick}>
+            <button className={buttonClass} style={buttonStyle} onClick={onClick}>
                 {text}
             </button>
         </td>
