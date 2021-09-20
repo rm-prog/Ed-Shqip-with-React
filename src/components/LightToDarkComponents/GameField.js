@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 
 import styles from '../../styles/logicGames.module.css'
 
@@ -49,8 +49,8 @@ const GameField = () => {
         { backgroundColor: 'white'}
     ]) 
 
-    let [timeInterval, setTimeInterval] = useState(null)
     let [timeoutFunction, setTimeoutFunction] = useState(null)
+    let interval = useRef(null)
 
     // Functions
 
@@ -75,7 +75,7 @@ const GameField = () => {
 
     const startGame = () => {
         setStartBtnText('Next')
-        setTimeInterval(setInterval(timer, 1000))
+        interval.current = setInterval(timer, 1000)
         setDisplayTable('table')
         setTableButtonsDisable([
             false, false, false, false, false, false, 
@@ -116,8 +116,7 @@ const GameField = () => {
             } else {
                 setTimeoutFunction(setTimeout(endGame, 1500))
             }
-            clearInterval(timeInterval)
-            console.log(timeInterval)
+            clearInterval(interval.current)
         }
     }
 
@@ -162,7 +161,7 @@ const GameField = () => {
                 setRoundsWon(roundsWon)
                 setDisplayTable('none')
                 setAnswerDisplayText('Bravo! Tani kaloni ne raundin tjeter')
-                clearInterval(timeInterval)
+                clearInterval(interval.current)
                 if (gameData[gameIndex+1] != undefined) {
                     setTimeoutFunction(setTimeout(nextLevel, 1500))
                 } else {
