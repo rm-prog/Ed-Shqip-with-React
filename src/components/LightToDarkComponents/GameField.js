@@ -50,6 +50,10 @@ const GameField = () => {
     ]) 
 
     let [timeoutFunction, setTimeoutFunction] = useState(null)
+    // !! NOTE !!
+    // Fixed bug when interval would not clear, when clearInterval ...
+    // was called inside the interval function, by using useRef instead ...
+    // of useState
     let interval = useRef(null)
 
     // Functions
