@@ -20,7 +20,11 @@ const GameField = () => {
     let [disableNextBtn, setDisableNextBtn] = useState(true)
 
     let [timeoutFunction, setTimeoutFunction] = useState(null) 
-    let [intervalFunction, setIntervalFunction] = useState(null) 
+    // !! NOTE !!
+    // Fixed bug when interval would not clear, when clearInterval ...
+    // was called inside the interval function, by using useRef instead ...
+    // of useState
+    let intervalFunction = useRef(null)
 
     let [correctAnswers, setCorrectAnswers] = useState(0)
     let [incorrectAnswers, setIncorrectAnswers] = useState(0)
@@ -58,10 +62,10 @@ const GameField = () => {
         let seconds = lettersArray[gameIndex].length+1
         setLetters('Tani shkruaji')
         setTimeDisplay(`${seconds} sekonda`)
-        setIntervalFunction(setInterval(() => {
+        intervalFunction = setInterval(() => {
             countdown(seconds)
             seconds--
-        }, 1000))
+        }, 1000)
     }
 
     const countdown = (seconds) => {
@@ -84,9 +88,8 @@ const GameField = () => {
         if (event.key === 'Enter') {
             if (inputField.current.value.toUpperCase() === lettersArray[gameIndex]) {
                 clearInterval(intervalFunction)
-                clearTimeout(timeoutFunction)
+                intervalFunction = null
                 setTimeoutFunction(null)
-                setIntervalFunction(null)
                 setTimeDisplay('Bravo. Vazhdo me nivelin tjeter')
                 setLetters('')
                 setDisableNextBtn(false)
@@ -96,8 +99,7 @@ const GameField = () => {
                 setCorrectAnswers(correctAnswers)
             } else {
                 clearInterval(intervalFunction)
-                clearTimeout(timeoutFunction)
-                setIntervalFunction(null)
+                intervalFunction = null
                 setTimeoutFunction(null)
                 setTimeDisplay('Gabim. Vazhdo me nivelin tjeter')
                 setLetters('')
