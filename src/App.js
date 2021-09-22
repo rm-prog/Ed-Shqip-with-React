@@ -66,6 +66,8 @@ const App = () => {
               */}
               <Route exact path='/word_games/english1'
               render={() => <WordGame words={EnglishWordGames.word_game1}/>} />
+              <Route exact path='/word_games/english2'
+              render={() => <WordGame words={EnglishWordGames.word_game2}/>} />
               {/* //////////////////////////////////////////////////////////////
                   //////////////////////////////////////////////////////////////
                   --------------------  Logic Games  ---------------------------

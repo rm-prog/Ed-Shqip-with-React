@@ -11,20 +11,20 @@ const WordGames = () => {
 
     // Data used to create buttons
 
-    const goToEnglish1 = () => {
-        window.open('/word_games/english1', '_self')
+    const goToWordGame = (path) => {
+        window.open(path, '_self')
     }
 
     const infos = [
         {
             id: 1,
-            clickFunction: () => goToEnglish1(),
+            clickFunction: () => goToWordGame('/word_games/english1'),
             buttonColor: styles.lime,
             buttonText: 'Gjeni fjalet e fshehura 1 - Anglisht'
         },
         {
             id: 2,
-            clickFunction: () => goToMainPage(),
+            clickFunction: () => goToWordGame('/word_games/english2'),
             buttonColor: styles.yellow,
             buttonText: 'Gjeni fjalet e fshehura 2 - Anglisht'
         },
