@@ -3,7 +3,7 @@
         {
             "question": "Cili eshte shteti me i madh ne Europe?",
             "alternatives": [
-                { "a": "Gjermania", "correct": "0"},
+                {"a": "Gjermania", "correct": "0"},
                 { "b": "Franca", "correct": "0"},
                 { "c": "Rusia", "correct": "1"}
             ],
@@ -12,7 +12,7 @@
         {
             "question": "Me sa shtete kufizohet Shqiperia?",
             "alternatives": [
-                { "a": "4", "correct": "1"},
+                {"a": "4", "correct": "1"},
                 { "b": "3", "correct": "0"},
                 { "c": "5", "correct": "0"}
             ],
@@ -21,7 +21,7 @@
         {
             "question": "Cili det lag ne veri Polonine?",
             "alternatives": [
-                { "a": "Deti i Veriut", "correct": "0"},
+                {"a": "Deti i Veriut", "correct": "0"},
                 { "b": "Deti Baltik", "correct": "1"},
                 { "c": "Deti Mesdhe", "correct": "0"}
             ],
@@ -134,6 +134,134 @@
                 {"c": "2", "correct": "1"}
             ],
             "correct": "2 - Oqeani Atlantik dhe Arktik"
+        }
+    ],
+    "europeCapitals": [
+        {
+            "question": "Cili eshte kryeqyteti me popullsine me te madhe ne Europe?",
+            "alternatives": [
+                {"a": "Londra", "correct": false},
+                {"b": "Berlini", "correct": false},
+                {"c": "Moska", "correct": true}
+            ],
+            "correct": "Moska - Rreth 12 500 000 banore"
+        },
+        {
+            "question": "Kryeqytet i cilit shtet eshte Talini?",
+            "alternatives": [
+                {"a": "Letonia", "correct": false},
+                {"b": "Estonia", "correct": true},
+                {"c": "Lituania", "correct": false}
+            ],
+            "correct": "Estonia"
+        },
+        {
+            "question": "Cili eshte kryeqyteti i Zvicres?",
+            "alternatives": [
+                {"a": "Berna", "correct": true},
+                {"b": "Gjeneva", "correct": false},
+                {"c": "Zurihu", "correct": false}
+            ],
+            "correct": "Berna"
+        },
+        {
+            "question": "Cili qytet konsiderohet si kryeqyteti i Europes?",
+            "alternatives": [
+                {"a": "Berlini", "correct": false},
+                {"b": "Strasburg", "correct": false},
+                {"c": "Brukseli", "correct": true}
+            ],
+            "correct": "Brukseli - Sepse ne Bruksel ndodhen shume institucione te BE-se"
+        },
+        {
+            "question": "Cili eshte kryeqyteti i Hollandes?",
+            "alternatives": [
+                {"a": "Haga", "correct": false},
+                {"b": "Amsterdami", "correct": true},
+                {"c": "Roterdami", "correct": false}
+            ],
+            "correct": "Amsterdami - Megjithese ne Hage ndodhen institucionet me te rendesishme"
+        },
+        {
+            "question": "Cili eshte kryeqyteti me i vizituar i Europes?",
+            "alternatives": [
+                {"a": "Londra", "correct": true},
+                {"b": "Parisi", "correct": false},
+                {"c": "Madridi", "correct": false}
+            ],
+            "correct": "Londra - Rreth 20 milione vizitor cdo vit"
+        },
+        {
+            "question": "Kryeqytet i cilit shtet eshte Helsinki?",
+            "alternatives": [
+                {"a": "Norvegjia", "correct": false},
+                {"b": "Danimarka", "correct": false},
+                {"c": "Finlanda", "correct": true}
+            ],
+            "correct": "Finlanda"
+        },
+        {
+            "question": "Cili eshte kryqyteti i Cekise?",
+            "alternatives": [
+                {"a": "Bratislava", "correct": false},
+                {"b": "Ljubjana", "correct": false},
+                {"c": "Praga", "correct": true}
+            ],
+            "correct": "Praga"
+        },
+        {
+            "question": "Cili eshte kryeqyteti i Rumanise?",
+            "alternatives": [
+                {"a": "Sofia", "correct": false},
+                {"b": "Budapeshti", "correct": false},
+                {"c": "Bukureshti", "correct": true}
+            ],
+            "correct": "Bukureshti"
+        },
+        {
+            "question": "Cili eshte kryeqyteti i Lituanise?",
+            "alternatives": [
+                {"a": "Kishinau", "correct": false},
+                {"b": "Riga", "correct": false},
+                {"c": "Vilnusi", "correct": true}
+            ],
+            "correct": "Vilnusi"
+        },
+        {
+            "question": "Cili eshte kryeqyteti i Bjellorusise?",
+            "alternatives": [
+                {"a": "Minsku", "correct": true},
+                {"b": "Kishinau", "correct": false},
+                {"c": "Moska", "correct": false}
+            ],
+            "correct": "Minsku"
+        },
+        {
+            "question": "Kryeqyteti i cilit shtet eshte Valeta?",
+            "alternatives": [
+                {"a": "Andora", "correct": false},
+                {"b": "Malta", "correct": true},
+                {"c": "San Marino", "correct": false}
+            ],
+            "correct": "Malta"
+        },
+        {
+            "question": "Kryeqytet i cilit shtet eshte Dublini?",
+            "alternatives": [
+                {"a": "Irlanda", "correct": true},
+                {"b": "Irlanda e Veriut", "correct": false},
+                {"c": "Belgjika", "correct": false}
+            ],
+            "correct": "Irlanda"
+        },
+        {
+            "question": "Cili eshte kryeqyteti i Polonise?",
+            "alternatives": [
+                {"a": "Poznani", "correct": false},
+                {"b": "Krakovi", "correct": false},
+                {"c": "Varshava", "correct": true}
+            ],
+            "correct": "Varshava"
         }
     ]
 }

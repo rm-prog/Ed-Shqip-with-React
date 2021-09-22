@@ -10,9 +10,8 @@ const GeographyQuizes = () => {
         window.open('/school-quizes', '_self')
     }
 
-    
-    const goToEuropeContinent = () => {
-        window.open('/school-quizes/geography-quizes/europe', '_self')
+    const goToQuizGame = (path) => {
+        window.open(path, '_self')
     }
 
     // Info used to create buttons
@@ -20,13 +19,13 @@ const GeographyQuizes = () => {
     const infos = [
         {
             id: 1,
-            clickFunction: () => goToEuropeContinent(),
+            clickFunction: () => goToQuizGame('/school-quizes/geography-quizes/europe'),
             buttonColor: styles.lime,
             buttonText: 'Kuiz - Kontinenti i Europes'
         },
         {
             id: 2,
-            clickFunction: () => goToMainPage(),
+            clickFunction: () => goToQuizGame('/school-quizes/geography-quizes/europe-capitals'),
             buttonColor: styles.lightblue,
             buttonText: 'Kuiz - Kryeqytetet e Europes'
         },

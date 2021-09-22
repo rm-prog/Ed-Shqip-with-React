@@ -58,6 +58,8 @@ const App = () => {
               {/*-------------------     Geography Quizes  ----------------------*/ }
               <Route exact path='/school-quizes/geography-quizes/europe' 
               render={() => <Quiz title='Kuiz - Kontinenti i Europes' questions={GeoQuizes.europeContinent}/>} />
+              <Route exact path='/school-quizes/geography-quizes/europe-capitals'
+              render={() => <Quiz title='Kuiz - Kryeqytetet e Europes' questions={GeoQuizes.europeCapitals}/>} />
               {/* ///////////////////////////////////////////////////////////////
                   ///////////////////////////////////////////////////////////////
                   ----------------------  Word Games  --------------------------
