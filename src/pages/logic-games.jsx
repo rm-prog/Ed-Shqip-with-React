@@ -11,6 +11,7 @@ import game3 from '../screenshots/remember-the-letters.PNG'
 import game4 from '../screenshots/find-the-percentage.PNG'
 import game5 from '../screenshots/tap-the-different-button.PNG'
 import game6 from '../screenshots/from-light-to-dark-game.PNG'
+import game7 from '../screenshots/tap-the-button-game.PNG'
 
 const LogicGames = () => {
 
@@ -57,6 +58,12 @@ const LogicGames = () => {
             clickFunction: () => goToLogicGame('/logic_games/light_to_dark'),
             imgSource: game6,
             cardTitle: 'Rendisni ngjyrat ne rendin e duhur'
+        },
+        {
+            id: 7,
+            clickFunction: () => goToLogicGame('/logic_games/tap_button'),
+            imgSource: game7,
+            cardTitle: 'Shtypni butonin e duhur'
         }
     ]
 

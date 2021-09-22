@@ -30,6 +30,7 @@ import RememberLetters from './pages/remember-letters'
 import FindThePercentage from './pages/find-the-percentage'
 import TapDifferentButton from './pages/tap-different_button'
 import LightToDark from './pages/light-to-dark'
+import TapTheButton from './pages/tap-the-button'
 
 const App = () => {
 
@@ -78,6 +79,7 @@ const App = () => {
               <Route exact path='/logic_games/find_percentage' component={FindThePercentage} />
               <Route exact path='/logic_games/tap_different' component={TapDifferentButton} />
               <Route exact path='/logic_games/light_to_dark' component={LightToDark} />
+              <Route exact path='/logic_games/tap_button' component={TapTheButton} />
             </Switch>
           </Router>
 
