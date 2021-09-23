@@ -171,3 +171,15 @@ body {
     border: 1px black solid;
     box-sizing: content-box;
 }
+
+.altButton{
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 12px 40px;
+    margin: 5px;
+}
+
+.altButton:active {
+    position: relative;
+    top: 1px;
+}
