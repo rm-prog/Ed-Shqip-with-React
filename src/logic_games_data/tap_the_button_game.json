@@ -1,0 +1,30 @@
+{
+   "correctOrNotButton": [
+        { "bgColor": "blue", "inAlbanian": "blu" },
+        { "bgColor": "green", "inAlbanian": "e gjelbert" },
+        { "bgColor": "yellow", "inAlbanian": "e verdhe" },
+        { "bgColor": "brown", "inAlbanian": "e kafte" },
+        { "bgColor": "gray", "inAlbanian": "gri" },
+        { "bgColor": "orange", "inAlbanian": "portokalli"},
+        { "bgColor": "black", "inAlbanian": "e zi"},
+        { "bgColor": "purple", "inAlbanian": "lejla" },
+        { "bgColor": "red", "inAlbanian": "e kuq"},
+        { "bgColor": "pink", "inAlbanian": "roze"},
+        { "bgColor": "white", "inAlbanian": "e bardhe"},
+        { "bgColor": "lightblue", "inAlbanian": "e kalter"}
+    ],
+    "randomColors": [
+        "blue",
+        "green",
+        "yellow",
+        "brown",
+        "gray",
+        "orange",
+        "black",
+        "purple",
+        "red",
+        "pink",
+        "white",
+        "lightblue"
+    ]
+}
